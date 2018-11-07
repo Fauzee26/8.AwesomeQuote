@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txtQuote"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:fontFamily="@font/fredoka_one"
+        tools:text="Will Rogers" />
+
+    <TextView
+        android:id="@+id/txtQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="21sp"
+        app:fontFamily="@font/fredoka_one"
+        tools:text="If you can build a business up big enough, it's respectable." />
+
+    <Button
+        android:id="@+id/btnRandom"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:text="Random Quote" />
+</RelativeLayout>
